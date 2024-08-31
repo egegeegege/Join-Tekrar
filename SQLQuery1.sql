@@ -11,7 +11,7 @@ select d.Adi,d.Soyadi,b.Bolum_Adi from Doktorlar d
 join Bolumler b on d.Bolum_ID = b.ID
 where d.Adi = 'Fatih' and d.Soyadi = 'Eraslan'
 
-select SUM(Personel_Sayisi) as'Toplam Personel Sayısı' from Bolumler 
+select SUM(Personel_Sayisi) as'Toplam Personel Sayısi' from Bolumler 
 
 -- Doktorlara aitaktif olan randevuları yanlarında doktor adı soyadı ve poliklinik adı olacak şekilde listeleyin
 select d.Adi,d.Soyadi,r.Randevu_Durumu,p.Poliklinik_Adi from Doktorlar d 
